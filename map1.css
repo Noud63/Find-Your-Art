@@ -1,0 +1,481 @@
+* {
+        box-sizing: border-box;
+}
+
+html, body { 
+           
+           background-image: url("images/backgroundart1.jpg");
+           position: cover; 
+           top: 0; 
+           left: 0; 
+
+          /* Preserve aspect ratio */
+           min-width: 99%;
+           min-height: 99%;
+}
+
+    
+#container {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           
+           transform: translate(-50%, -50%); 
+           width: 95%;
+           height: 90%;
+           box-shadow: 0px 8px 10px 5px rgb(34, 77, 122);
+    }   
+    
+.header {
+        position: relative;
+        background-image: linear-gradient(#6191c2, #95c2ec 90%);
+        box-shadow: 0 0px 4px 2px #2a4763;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 12px;
+        z-index: 5;
+    }
+
+.fya   { 
+        text-shadow: 2px 2px 4px #fff, 0px 0px 0px #000, 4px 4px 6px #fff;
+        -webkit-text-fill-color: transparent;
+        mix-blend-mode: multiply;
+        font-family: 'Stardos Stencil';
+        font-size: 3vw;
+        }
+
+.heading   {
+        height: 8%;
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Stardos Stencil'; 
+        font-size: 0.4vw;
+        letter-spacing: 7px;
+        background-color:  #95c2ec;
+}
+
+h1  {
+        font-size: 0.8vw;
+        color: #093153
+}
+
+.sidebar   {
+        
+        -webkit-box-shadow: 5px 0 8px -2px #2a4763;  /* -2 shadow at one side only */
+        -moz-box-shadow:5px 0 8px -2px #2a4763;
+        box-shadow: 5px 0 8px -2px #2a4763;
+        position: relative;
+        display: block;
+        background-color:  #95c2ec;
+        width: 25%;
+        height: 80%;
+        float: left;
+        z-index: 2;
+}
+
+#mapid {
+        height: 80%;
+        position: relative;
+        width: 75%;
+        float: left;
+        z-index: 1;
+}
+
+.footer1 {
+        position: relative;
+        width: 33%;
+        height: 5.1%;
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'arial'; font-size: 0.6vw; font-weight: bold; color:#093153;
+        letter-spacing: 3px; 
+        background-image: linear-gradient( #95c2ec 40%, #4a7aaa 100%);
+        z-index: 1000;
+}
+
+.footer2 {
+        position: relative;
+        width:33%;
+        height: 5.1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'arial'; font-size: 0.6vw; font-weight: bold; color: #093153;
+        letter-spacing: 3px; 
+        background-image: linear-gradient( #95c2ec 40%, #4a7aaa 100%);
+        z-index: 1000;
+}
+
+.footer2 a {
+        text-decoration: underline; font-weight: bold; color: #093153;
+}
+
+.footer3 {
+        position: relative;
+        width: 34%;
+        height: 5.1%;
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'arial'; font-size: 0.6vw; font-weight: bold; color: #093153;
+        letter-spacing: 3px; 
+        background-image: linear-gradient( #95c2ec 40%, #4a7aaa 100%);
+        z-index: 1000;
+}
+
+#time {
+        font-family: 'arial';
+        display: block;
+}
+
+.item { 
+        border-bottom: 1px dashed #2a4763;
+        font-family: 'Times';
+        color: rgb(99, 13, 13) ;
+        width: 100%;
+        height: auto;
+        text-overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+}
+
+.item a {  
+       font-family: 'Times';
+       font-size: 1.0vw;
+       font-weight: bold;
+       color: rgb(99, 13, 13) ;
+       text-decoration:  none;
+}
+
+.flex { 
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+}
+
+#pic {
+        width: 20%;
+        height: auto;
+        padding-bottom: 5%;
+}
+
+.box { 
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+}
+
+.extra {
+        font-family: 'times';
+        color: rgb(255, 255, 255) ;
+        font-size: 0.8vw;
+        white-space: normal;
+        width: 95%;
+        float: left;
+        background: transparent;
+        padding-bottom: 5%;
+}     
+
+.extra2 {
+        margin-top: 4%;
+        font-family: 'times';
+        color: rgb(255, 255, 255) ;
+        font-size: 0.8vw;
+        white-space: normal;
+        width: 95%;
+        float: left;
+        background: transparent;
+        padding-bottom: 5%;
+       
+}
+
+.content {
+        width: 90%;
+        height:100%;
+        background: transparent;
+        overflow: auto;
+        text-overflow: ellipsis;
+        
+}
+
+.info {
+         font-family: 'times';
+         color: #093153;
+         font-size: 0.8vw;
+         background: transparent;
+}
+
+.space {
+        margin-top: 3%;
+        font-family: 'Times';
+        font-size: 1.0vw;
+        font-weight: bold;
+        color:#093153;
+        text-decoration:  none;
+}
+
+.listings {
+        height: 92%;
+        width: 100%;
+        overflow-y: scroll;
+}
+  
+.listings .item {
+        display: block;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/*  
+.listings .item:last-child { border-bottom: none; }
+  
+.listings .item .title {
+    display: block;
+    color: #375e8c;
+    font-weight: 700;
+    z-index: 5;
+  }
+  
+.listings .item .title small { 
+    font-weight: 400; 
+    color: #99cdfe;                     
+}
+  
+.listings .item.active .title,
+.listings .item .title:hover { color: #8cc63f; }
+  
+.listings .item.active {
+    background-color: #f8f8f8;
+  }
+*/  
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 0px;
+    border-left: 0;
+    /*background: rgba(0, 0, 0, 0.1);*/
+    
+  }
+
+::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #659dd4;
+    border-radius:2px;
+    min-height: 40px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(90deg, #286299 0%, #99cdfe  35%, transparent 100%, #99cdfe  65%, transparent);
+    -webkit-box-shadow: inset  0px 0px 5px  #286299;
+    box-shadow:inset  0px 0px 5px  #286299; 
+    background-color: #99cdfe ;
+   
+  }
+::-webkit-scrollbar-thumb:hover {
+        background: #518cc4; 
+}  
+  
+.clearfix { display: block; }
+  
+.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+      
+/* The leaflet actual popup 
+.popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+      
+       Popup arrow 
+.popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+Toggle this class - hide and show the popup 
+.popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+       Add animation (fade in the popup) 
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+*/
+
+
+ /*custom popup */     
+
+#cover {
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+}
+
+.wrapper { 
+        position: absolute;
+        width: 288px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        border-radius: 0px;
+        margin-left: 25px;;
+        -webkit-box-shadow: 5px 0 8px -2px #554e29;  /* -2 shadow at one side only */
+        -moz-box-shadow:5px 0 8px -2px #554e29;
+        box-shadow: 5px 0 8px -2px#554e29;
+        overflow: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+        width: 7px;
+        height: 0px;
+        border-left: 0;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+        background: #659dd4;
+        border-radius:2px;
+        min-height: 40px;
+        background-image: -webkit-linear-gradient(90deg, #286299 0%, #99cdfe  35%, transparent 100%, #99cdfe  65%, transparent);
+        -webkit-box-shadow: inset  0px 0px 5px  #286299;
+        box-shadow:inset  0px 0px 5px  #286299; 
+        background-color: #99cdfe ;
+        
+      }
+
+.wrapper::-webkit-scrollbar-thumb:hover {
+        background: #518cc4; 
+}  
+
+.popUpContent {
+        font-size: 14px;
+        position: relative;
+        height: auto;
+        width: 288px;
+        text-align: center;
+        padding-top: 20px;
+  }
+
+.puName {
+        font-family: 'Times';
+        font-size: 1.3em;
+        color: #8d480f; 
+        text-align: center;
+        font-weight: bold;
+        }
+
+.puTitle{
+        font-family: 'Times';
+        font-size: 1.0em;
+        color: #883d00;
+        text-align: center;
+}
+
+.extra3  {
+       
+        font-family: 'times';
+        color:#883d00 ;
+        font-size: 1.0rem;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+
+} 
+
+.check {
+        font-family: 'Times';
+        font-size: 1.0em;
+        font-weight: bold;
+        color: #8d480f ;
+}
+
+.link a {
+        font-family: 'Times';
+        font-size: 1.0em;
+        color:#883d00 ;
+        text-decoration: underline #883d00 ;
+}
+
+.link1 {
+        font-family: 'Times';
+        font-size: 1.0em;
+        color:#883d00 ;
+        text-decoration: none;
+}
+
+.pic {  
+        position: relative;
+        width: 288px;
+        height: auto;
+}
+
+img {
+        display: block;
+}
+
+hr {
+        border-top: 1px dashed #883d00;
+        
+}
+
+/*
+.close {
+        position: relative;
+        font-family: 'arial';
+        font-size: 14px;
+        color:#093153;
+        float: right;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+}
+.close a {
+        text-decoration: none;
+}
+*/
