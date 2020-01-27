@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find Your Art</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<meta name="description" content="Art in Amsterdam">
+<meta name="author" content="noud van dun">
+<link rel="stylesheet" type="text/css" href="map1.css">
+<link href='https://fonts.googleapis.com/css?family=Stardos Stencil' rel='stylesheet'> 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<!--<link rel="stylesheet" type="text/css" href="leaflet.css">-->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+<script type="text/javascript" src="leaflet.smoothmarkerbouncing.js"></script>
+
+</head>
+    
+<body>
+      <div id="container">
+
+         <div class ="header"><span class = "fya">F i n d &nbsp; y o u r &nbsp;A r t</span></div>
+
+               <div class="sidebar" id = "sidebar">
+
+                  <div class='heading'>
+                     <div class="index"><h1>I N D E X</h1></div>
+                  </div>
+                     <div id='listings' class='listings'></div>
+                  </div> <!--sidebar-->
+   
+            <div id="mapid">
+               <div id="cover">
+               <div id="popup"></div>
+               </div>
+            </div>
+      
+       <div class="footer1">Find your Art in the Amsterdam Area</div>
+       <div class="footer3"><span id="time">Local time:</span></div>
+       <div class="footer2">WebDev mail:<a href="mailto:noudvandun@gmail.com?subject=Take me on board!">noudvandun@gmail.com</a></div>
+      
+   </div> <!--container-->
+   <div class="container2"></div>
+   
+   <script type="text/javascript" src="geojson.js"></script>
+   <script type="text/javascript" src="map.js"></script>
+   <script type="text/javascript" src="markers2a.js"></script>
+   <script type="text/javascript" src="buildList.js"></script>
+   <script type="text/javascript" src="highlight.js"></script>
+   
+</body>
+</html>
