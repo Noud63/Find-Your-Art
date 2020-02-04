@@ -40,7 +40,7 @@ var redFlag = L.icon({
             element.innerHTML =
                 `<div class= "wrapper" style="background-color:#e8f4ff">
                     <div class='pic'>
-                          <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover"/>
+                          <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover" class="fit"/>
                        </div>
                     <div class="popUpContent" style="background-color:#e8f4ff">
                           <div class="puName">${feature.properties.name}</div>
@@ -55,7 +55,7 @@ var redFlag = L.icon({
             element.innerHTML = 
                 `<div class= "wrapper" style="background-color:#e8f4ff">
                      <div class='pic'>
-                          <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover"/>
+                          <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover" class="fit"/>
                      </div>
                  <div class="popUpContent" style="background-color:#e8f4ff">
                          <div class="puName">${feature.properties.name}</div>
@@ -74,7 +74,7 @@ var redFlag = L.icon({
             element.innerHTML = 
                 `<div class= "wrapper" style="background-color:#e8f4ff">
                     <div class='pic'>
-                         <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover"/>
+                         <img src="images/${feature.properties.image}" style="height: 100%; width: 100%; object-fit: cover" class="fit"/>
                     </div> 
                 <div class="popUpContent" style="background-color:#e8f4ff">
                          <div class="puName">${feature.properties.name}</div>
