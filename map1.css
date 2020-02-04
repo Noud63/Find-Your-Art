@@ -487,11 +487,15 @@ Toggle this class - hide and show the popup
         height: auto;
 }
 
+.fit {
+        width: 100%;
+        height: auto;
+        object-fit: cover;    
+}
+
 img {
         display: block;
         width: 100%;
-        height: auto;
-        object-fit: cover;
 }
 
 hr {
