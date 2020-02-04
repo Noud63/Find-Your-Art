@@ -35,17 +35,39 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
-        letter-spacing: 12px;
         z-index: 5;
     }
+
 
 .fya   { 
         text-shadow: 2px 2px 4px #fff, 0px 0px 0px #000, 4px 4px 6px #fff;
         -webkit-text-fill-color: transparent;
         mix-blend-mode: multiply;
         font-family: 'Stardos Stencil';
-        font-size: 3vw;
+        font-size: 3.5rem;
+        letter-spacing: 12px;
         }
+
+@media only screen and (max-width: 1200px) {
+                .fya {
+                         font-size: 2.5rem;
+                         letter-spacing: 10px;
+                 }
+               }
+
+@media only screen and (max-width: 725px) {
+                .fya {
+                         font-size: 1.5rem;
+                         letter-spacing: 8px;
+                 }
+               }
+
+@media only screen and (max-width: 550px) {
+                .fya {
+                         font-size: 1.2rem;
+                         letter-spacing: 4px;
+                 }
+               }
 
 .heading   {
         height: 8%;
@@ -353,7 +375,7 @@ Toggle this class - hide and show the popup
 #cover {
         width: 100%;
         height: 100%;
-        border: 2px solid black;
+       
 }
 
 .wrapper { 
@@ -370,6 +392,12 @@ Toggle this class - hide and show the popup
         box-shadow: 5px 0 8px -2px#554e29;
         overflow: auto;
 }
+
+@media only screen and (max-width: 450px) {
+        .wrapper {
+                width: 200px;
+         }
+       }
 
 .wrapper::-webkit-scrollbar {
         width: 7px;
@@ -399,7 +427,13 @@ Toggle this class - hide and show the popup
         width: 288px;
         text-align: center;
         padding-top: 20px;
-  }
+}
+
+@media only screen and (max-width: 450px) {
+        .popUpContent {
+                width: 200px;
+         }
+       }
 
 .puName {
         font-family: 'Times';
@@ -449,7 +483,7 @@ Toggle this class - hide and show the popup
 
 .pic {  
         position: relative;
-        width: 288px;
+        width: 100%;
         height: auto;
 }
 
@@ -462,20 +496,3 @@ hr {
         
 }
 
-/*
-.close {
-        position: relative;
-        font-family: 'arial';
-        font-size: 14px;
-        color:#093153;
-        float: right;
-        bottom: 0;
-        right: 0;
-        margin-bottom: 8px;
-        margin-right: 8px;
-        cursor: pointer;
-}
-.close a {
-        text-decoration: none;
-}
-*/
